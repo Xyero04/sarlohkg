@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title','Kitchen')
+@section('title', 'Kitchen')
 
 @section('data')
 <nav class="navbar md:navbar-expand bg-1">
@@ -11,7 +11,7 @@
     </button>
     <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
       <div class="drawer-header">
-        <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+        <h5 class="drawer-title" id="navbarDrawerLabel">Sar Loh Kg</h5>
         <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
       </div>
       <div class="drawer-body mb-2 md:mb-0">
@@ -20,21 +20,13 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Burmese Traditional Food</a>
           </li>
           <li class="nav-item">
-            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
-              Menu
-            </button>
-            <div class="menu">
-              <a class="menu-item" href="#">Action</a>
-              <a class="menu-item" href="#">Another action</a>
-              <hr class="menu-divider">
-              <a class="menu-item" href="#">Something else here</a>
-            </div>
+            <a class="nav-link" href="#">Western Food</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="#">Drink & Beverages</a>
           </li>
         </ul>
         <form class="hstack gap-2" role="search">
@@ -47,4 +39,8 @@
     </dialog>
   </div>
 </nav>
+
+<div class="body_part mt-3">
+    <img src="{{ asset('foodphoto/cover.jpg') }}" class="img-fluid" alt="cover_photo">
+</div>
 @endsection
